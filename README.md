@@ -379,9 +379,10 @@ interactive-obstacle-detector/
 ├── README.md
 ├── LICENSE
 └── images/
-    ├── full-circuit.jpg
-    ├── breadboard-wiring.jpg
-    └── uno-wiring.jpg
+    ├── full-circuit-top.png
+    ├── full-circuit-angled.png
+    ├── breadboard-wiring.png
+    └── uno-wiring.png
 ```
 
 ---
@@ -398,4 +399,4 @@ Copyright (c) 2026 Dayyan Malik
 
 **Dayyan Malik**
 B.S. Computer Engineering — Georgia State University
-[LinkedIn](www.linkedin.com/in/dayyan-m-profile) · [GitHub](https://github.com/dayyan7)
+[LinkedIn](https://www.linkedin.com/in/dayyan-m-profile) · [GitHub](https://github.com/dayyan7)
