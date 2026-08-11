@@ -97,14 +97,14 @@ Red, yellow, and green LEDs sit in a row just behind the HC-SR04. This placement
 ---
 
 ### Full Circuit
-![Full Circuit Top View](images/full-circuit-top.jpg)
-![Full Circuit Angled View](images/full-circuit-angled.jpg)
+![Full Circuit Top View](images/full-circuit-top.png)
+![Full Circuit Angled View](images/full-circuit-angled.png)
 
 ### Breadboard Wiring
-![Breadboard Wiring](images/breadboard-wiring.jpg)
+![Breadboard Wiring](images/breadboard-wiring.png)
 
 ### Uno R3 Pin Connections
-![Uno R3 Wiring](images/uno-wiring.jpg)
+![Uno R3 Wiring](images/uno-wiring.png)
 
 ### Pin Reference
 
