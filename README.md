@@ -97,7 +97,8 @@ Red, yellow, and green LEDs sit in a row just behind the HC-SR04. This placement
 ---
 
 ### Full Circuit
-![Full Circuit](images/full-circuit.jpg)
+![Full Circuit Top View](images/full-circuit-top.jpg)
+![Full Circuit Angled View](images/full-circuit-angled.jpg)
 
 ### Breadboard Wiring
 ![Breadboard Wiring](images/breadboard-wiring.jpg)
@@ -385,5 +386,5 @@ Copyright (c) 2026 Dayyan Malik
 ## Author
 
 **Dayyan Malik**
-Computer Engineering — Georgia State University
-[LinkedIn](https://www.linkedin.com/in/your-linkedin) · [GitHub](https://github.com/your-github)
+B.S. Computer Engineering — Georgia State University
+[LinkedIn](www.linkedin.com/in/dayyan-m-profile) · [GitHub](https://github.com/dayyan7)
