@@ -2,7 +2,8 @@
 
 A real-time obstacle detection system built on the ELEGOO Uno R3 that uses an ultrasonic sensor to measure distance, triggers visual LED alerts, and displays live readings on an LCD screen. When an object gets too close the system locks itself into an alarm state and can only be unlocked via IR remote. A photoresistor monitors ambient light and automatically adjusts a green LED's brightness in response.
 
-[Demo Video](https://your-demo-link-here)
+[Demo Video with NO Captions & Music (RAW)](https://your-demo-link-here)
+[Demo Video with Captions & Music (EDITED)](https://your-demo-link-here)
 
 ---
 
