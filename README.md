@@ -1,9 +1,8 @@
 # Interactive Obstacle Detector
 
-A real-time obstacle detection system built on the ELEGOO Uno R3 that uses an ultrasonic sensor to measure distance, triggers visual LED alerts, and displays live readings on an LCD screen. When an object gets too close the system locks itself into an alarm state and can only be unlocked via IR remote. A photoresistor monitors ambient light and automatically adjusts a green LED's brightness in response.
+A real-time obstacle detection system built on the ELEGOO Uno R3. The circuit was first drafted as a formal schematic in KiCad before being implemented on a breadboard — ensuring every connection was planned and verified before any wire was placed. The system uses an HC-SR04 ultrasonic sensor to measure distance, triggers visual LED alerts, and displays live readings on an LCD screen. When an object gets too close the system locks itself into an alarm state and can only be unlocked via IR remote. A photoresistor monitors ambient light and automatically adjusts a green LED's brightness in response.
 
-[Demo Video with NO Captions & Music (RAW)](https://your-demo-link-here)
-[Demo Video with Captions & Music (EDITED)](https://your-demo-link-here)
+[Demo Video](https://your-demo-link-here)
 
 ---
 
@@ -14,6 +13,7 @@ A real-time obstacle detection system built on the ELEGOO Uno R3 that uses an ul
 - [Hardware](#hardware)
 - [Circuit & Wiring](#circuit--wiring)
   - [Physical Layout Strategy](#physical-layout-strategy)
+  - [KiCad Schematic](#kicad-schematic)
   - [Project Images](#project-images)
   - [Pin Reference](#pin-reference)
 - [How Everything Works Together](#how-everything-works-together)
@@ -39,7 +39,9 @@ A real-time obstacle detection system built on the ELEGOO Uno R3 that uses an ul
 
 ## Overview
 
-This project started as the final capstone of an Arduino fundamentals course and grew into a fully functional embedded system that demonstrates real hardware-software integration. Every major concept from the course — interrupts, non-blocking timing, EEPROM, IR decoding, PWM, and analog sensing — is applied here in a way that makes them work together rather than in isolation.
+This project started as the final capstone of an Arduino fundamentals course and grew into a fully functional embedded system that demonstrates real hardware-software integration. Before a single wire was placed on the breadboard, the entire circuit was mapped out in KiCad — every component, every connection, every power rail — so the implementation phase was deliberate rather than trial and error.
+
+Every major concept from the course — interrupts, non-blocking timing, EEPROM, IR decoding, PWM, and analog sensing — is applied here in a way that makes them work together rather than in isolation.
 
 The core idea is simple: an ultrasonic sensor watches for nearby objects, a set of LEDs gives instant visual feedback on proximity, and an LCD provides detailed readable information. When something gets too close, the system locks into an alarm state. Everything runs simultaneously with no blocking delays anywhere in the main loop.
 
@@ -84,23 +86,29 @@ The combination of sensor input, state-based logic, persistent settings, and rem
 
 How components are physically placed on the breadboard matters more than most beginners realize. Poor placement causes signal interference, makes wiring harder to follow, and can even affect sensor accuracy.
 
-**Ultrasonic Sensor — Place at the edge of the breadboard with the sensor facing outwards away from the interior of the breadboard.**
-The HC-SR04 works by sending sound waves out and listening for the echo. If it's placed facing the components and wires on the breadboard, if placed incorrectly other components or wires can reflect the sound back and cause false readings. Mounting it at the edge of the breadboard facing outwards gives it a clean line of sight with nothing obstructing its field of view. The LEDs are placed directly behind it in a row — this mirrors how they function in the program, where LED behavior is directly driven by the distance the sensor reads.
+**Ultrasonic Sensor — Place at the top edge of the breadboard**
+The HC-SR04 works by sending sound waves out and listening for the echo. If it's placed in the middle of the breadboard, other components in front of it reflect the sound back and cause false readings. Mounting it at the very top edge of the breadboard gives it a clean line of sight with nothing obstructing its field of view. The LEDs are placed directly behind it in a row — this mirrors how they function in the program, where LED behavior is directly driven by the distance the sensor reads.
 
-**LCD — Place along the bottom edge, hanging off the breadboard.**
+**LCD — Place along the bottom edge, hanging off the breadboard**
 The LCD1602 is the largest component in this build. If placed entirely on the breadboard it consumes most of the available rows and leaves little room for anything else. Instead, position it at the bottom edge so roughly half hangs off, with only the pin row sitting in the breadboard. This keeps the rest of the board accessible and the wiring clean.
 
-**Photoresistor — Place in the center of the board with no wires running directly over it.**
+**Photoresistor — Place in the center of the board with no wires running directly over it**
 A photoresistor reads ambient light. If wires are run over it or components are stacked next to it, they cast shadows and skew the reading toward whatever is directly above the sensor rather than the actual room light level. Placing it in the center of the board with clear space around it lets it average light from the whole board environment rather than reading a localized pocket of shadow.
 
-**LEDs — Place directly behind the ultrasonic sensor in a row.**
+**LEDs — Place directly behind the ultrasonic sensor in a row**
 Red, yellow, and green LEDs sit in a row just behind the HC-SR04. This placement is intentional — it visually communicates the relationship between detection and feedback. When someone looks at the circuit, the LEDs are the first thing they see react when an object approaches the sensor in front of them.
 
 ---
 
-### Project Images
+### KiCad Schematic
+
+The full circuit was designed in KiCad before breadboard implementation. The schematic covers all component connections, power rails, and signal routing across six grouped blocks — microcontroller, distance sensor, IR receiver, visual indicators, LCD display, and ambient light sensor.
+
+![KiCad Schematic](images/kicad-schematic.png)
 
 ---
+
+### Project Images
 
 ### Full Circuit
 ![Full Circuit Top View](images/full-circuit-top.png)
@@ -380,6 +388,7 @@ interactive-obstacle-detector/
 ├── README.md
 ├── LICENSE
 └── images/
+    ├── kicad-schematic.png
     ├── full-circuit-top.png
     ├── full-circuit-angled.png
     ├── breadboard-wiring.png
