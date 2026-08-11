@@ -13,6 +13,7 @@ A real-time obstacle detection system built on the ELEGOO Uno R3 that uses an ul
 - [Hardware](#hardware)
 - [Circuit & Wiring](#circuit--wiring)
   - [Physical Layout Strategy](#physical-layout-strategy)
+  - [Project Images](#project-images)
   - [Pin Reference](#pin-reference)
 - [How Everything Works Together](#how-everything-works-together)
   - [Distance Detection](#distance-detection)
@@ -96,15 +97,25 @@ Red, yellow, and green LEDs sit in a row just behind the HC-SR04. This placement
 
 ---
 
+### Project Images
+
+---
+
 ### Full Circuit
 ![Full Circuit Top View](images/full-circuit-top.png)
 ![Full Circuit Angled View](images/full-circuit-angled.png)
 
+---
+
 ### Breadboard Wiring
 ![Breadboard Wiring](images/breadboard-wiring.png)
 
+---
+
 ### Uno R3 Pin Connections
 ![Uno R3 Wiring](images/uno-wiring.png)
+
+---
 
 ### Pin Reference
 
