@@ -83,8 +83,8 @@ The combination of sensor input, state-based logic, persistent settings, and rem
 
 How components are physically placed on the breadboard matters more than most beginners realize. Poor placement causes signal interference, makes wiring harder to follow, and can even affect sensor accuracy.
 
-**Ultrasonic Sensor — Place at the top edge of the breadboard**
-The HC-SR04 works by sending sound waves out and listening for the echo. If it's placed in the middle of the breadboard, other components in front of it reflect the sound back and cause false readings. Mounting it at the very top edge of the breadboard gives it a clean line of sight with nothing obstructing its field of view. The LEDs are placed directly behind it in a row — this mirrors how they function in the program, where LED behavior is directly driven by the distance the sensor reads.
+**Ultrasonic Sensor — Place at the edge of the breadboard with the sensor facing outwards away from the interior of the breadboard**
+The HC-SR04 works by sending sound waves out and listening for the echo. If it's placed facing the components and wires on the breadboard, if placed incorrectly other components or wires can reflect the sound back and cause false readings. Mounting it at the edge of the breadboard facing outwards gives it a clean line of sight with nothing obstructing its field of view. The LEDs are placed directly behind it in a row — this mirrors how they function in the program, where LED behavior is directly driven by the distance the sensor reads.
 
 **LCD — Place along the bottom edge, hanging off the breadboard**
 The LCD1602 is the largest component in this build. If placed entirely on the breadboard it consumes most of the available rows and leaves little room for anything else. Instead, position it at the bottom edge so roughly half hangs off, with only the pin row sitting in the breadboard. This keeps the rest of the board accessible and the wiring clean.
