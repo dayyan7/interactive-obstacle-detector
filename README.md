@@ -3,7 +3,7 @@
 A real-time obstacle detection system built on the ELEGOO Uno R3. The circuit was first drafted as a formal schematic in KiCad before being implemented on a breadboard — ensuring every connection was planned and verified before any wire was placed. The system uses an HC-SR04 ultrasonic sensor to measure distance, triggers visual LED alerts, and displays live readings on an LCD screen. When an object gets too close the system locks itself into an alarm state and can only be unlocked via IR remote. A photoresistor monitors ambient light and automatically adjusts a green LED's brightness in response.
 
 [Demo Video - Unedited (Raw)](https://youtube.com/shorts/-8XIuKnaVVs)
-
+<br>
 [Demo Video - Edited](https://youtu.be/fN4enswhWk0)
 
 ---
