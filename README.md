@@ -104,7 +104,7 @@ Red, yellow, and green LEDs sit in a row just behind the HC-SR04. This placement
 
 The full circuit was designed in KiCad before breadboard implementation. The schematic covers all component connections, power rails, and signal routing across six grouped blocks — microcontroller, distance sensor, IR receiver, visual indicators, LCD display, and ambient light sensor.
 
-![KiCad Schematic](images/kicad-schematic.png)
+![KiCad Schematic](images/iod-kicad-schematic.png)
 
 ---
 
